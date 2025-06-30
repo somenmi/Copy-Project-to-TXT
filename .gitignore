@@ -1,0 +1,36 @@
+# .gitignore для VS Code расширения
+
+# Локальные настройки VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+
+# Node.js и npm
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Скомпилированные файлы
+out/
+dist/
+*.vsix
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+# Файлы IDE
+.idea/
+*.suo
+*.user
+*.sln
+
+# Тестовые данные
+test-results/
+coverage/
+
+# Конфигурационные файлы ESLint и TypeScript
+.eslintcache
+tsconfig.tsbuildinfo
