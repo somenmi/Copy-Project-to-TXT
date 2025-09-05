@@ -1,4 +1,4 @@
-# Copy Project to TXT
+# Copy Project to TXT [README.ru.md](https://github.com/somenmi/Copy-Project-to-TXT/blob/main/README.ru.md)
 
 An extension for VS Code that copies the entire project into a single text file (`project_content.txt `), ignoring confidential and system files.
 
