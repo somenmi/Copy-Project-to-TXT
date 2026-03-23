@@ -2,7 +2,7 @@
   "name": "copy-project-to-txt",
   "displayName": "Copy Project to TXT",
   "description": "Копирует все файлы проекта в один текстовый файл",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "Yalkee",
   "author": {
     "name": "Yalkee"

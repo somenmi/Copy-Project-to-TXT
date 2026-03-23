@@ -99,3 +99,6 @@ JavaScript (.js, .jsx), TypeScript (.ts, .tsx), Python (.py), Java (.java), C++ 
 
     × v1.0.1 : light minor
         ↪︎ доработка README.md
+
+    × v1.0.2 : light minor
+        ↪︎ доработка README.md x2
