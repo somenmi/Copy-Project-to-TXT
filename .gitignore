@@ -1,36 +1,29 @@
-# .gitignore для VS Code расширения
+# Dependencies
+node_modules/
 
-# Локальные настройки VS Code
-.vscode/*
-!.vscode/extensions.json
+# Build output
+out/
+*.vsix
+*.vsixmanifest
+
+# IDE files
+.vscode/
 !.vscode/launch.json
 !.vscode/tasks.json
-!.vscode/settings.json
+!.vscode/extensions.json
 
-# Node.js и npm
-node_modules/
-npm-debug.log
-package-lock.json
-
-# Скомпилированные файлы
-out/
-dist/
-*.vsix
-
-# Логи и временные файлы
+# System files
+.DS_Store
+Thumbs.db
 *.log
-*.tmp
 
-# Файлы IDE
-.idea/
-*.suo
-*.user
-*.sln
+# Test files
+.vscode-test/
+src/test/
 
-# Тестовые данные
-test-results/
-coverage/
+# Environment
+.env
+.env.local
 
-# Конфигурационные файлы ESLint и TypeScript
-.eslintcache
-tsconfig.tsbuildinfo
+# Package locks
+package-lock.json

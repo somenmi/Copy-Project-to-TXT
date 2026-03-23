@@ -1,51 +1,58 @@
 {
   "name": "copy-project-to-txt",
   "displayName": "Copy Project to TXT",
-  "description": "%extension.description%",
-  "publisher": "AWALORES",
-  "author": "AWALORES",
-  "license": "MIT",
-  "icon": "extension/logo.png",
-  "version": "0.1.0",
-  "engines": {
-    "vscode": "^1.100.0"
+  "description": "Копирует все файлы проекта в один текстовый файл",
+  "version": "1.0.1",
+  "publisher": "Yalkee",
+  "author": {
+    "name": "Yalkee"
   },
-  "keywords": [
-    "project",
-    "export",
-    "копирование",
-    "проект"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/somenmi/Copy-Project-to-TXT"
+  },
+  "homepage": "https://github.com/somenmi/Copy-Project-to-TXT",
+  "bugs": {
+    "url": "https://github.com/somenmi/Copy-Project-to-TXT/issues"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:copy-project-to-txt.scanWorkspace",
+    "onCommand:copy-project-to-txt.openSettings"
+  ],
   "main": "./out/extension.js",
+  "icon": "extension/logo.png",
+  "galleryBanner": {
+    "color": "#1e1e2e",
+    "theme": "dark"
+  },
   "contributes": {
     "commands": [
       {
-        "command": "extension.copyProjectToTxt",
-        "title": "Copy Project to TXT"
+        "command": "copy-project-to-txt.scanWorkspace",
+        "title": "Сканировать проект",
+        "category": "Copy Project to TXT"
+      },
+      {
+        "command": "copy-project-to-txt.openSettings",
+        "title": "Открыть настройки",
+        "category": "Copy Project to TXT"
       }
     ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src",
-    "test": "vscode-test"
+    "watch": "tsc -watch -p ./"
   },
   "devDependencies": {
-    "@types/vscode": "^1.100.0",
-    "@types/mocha": "^10.0.10",
-    "@types/node": "20.x",
-    "@typescript-eslint/eslint-plugin": "^8.31.1",
-    "@typescript-eslint/parser": "^8.31.1",
-    "eslint": "^9.25.1",
-    "typescript": "^5.8.3",
-    "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.5.2"
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^5.0.0"
   }
 }

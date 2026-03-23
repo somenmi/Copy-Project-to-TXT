@@ -1,11 +1,37 @@
-.vscode/**
-.vscode-test/**
+# Source code
 src/**
+!src/extension.ts
 .gitignore
-.yarnrc
-vsc-extension-quickstart.md
-**/tsconfig.json
-**/eslint.config.mjs
-**/*.map
+.git/
+.vscode/
+.vscode-test/
+.vscodeignore
+
+# Development files
 **/*.ts
-**/.vscode-test.*
+**/*.map
+tsconfig.json
+.eslintrc*
+.eslintignore
+.prettier*
+CHANGELOG.md
+vsc-extension-quickstart.md
+**/*.test.ts
+**/*.test.js
+
+# Build artifacts
+node_modules/
+!node_modules/@types/
+
+# Package files
+*.vsix
+package-lock.json
+
+# IDE
+.vscode/
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# System
+.DS_Store
+Thumbs.db
